@@ -21,7 +21,7 @@ jobs:
               with:
                 issue-url: ${{github.event.issue.url}}
                 comment-body: "Hi @${{github.actor}}, thanks for opening this! 🎉 We'll get back to you soon! [using Bash]"
-                token: ${{secrets.GITHUB_TOKEN}}
+                token: ${{secrets.DAE_GITHUB_TOKEN}}
 
     #greet-js:
     #    runs-on: ubuntu-latest
