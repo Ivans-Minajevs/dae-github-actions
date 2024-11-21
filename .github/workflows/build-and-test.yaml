@@ -14,7 +14,7 @@ jobs:
         steps: 
             - uses: actions/checkout@v4
             - name: Configure CMake
-              run: cmake -B build/ -DBUILD_TEST=ON -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+              run: cmake -S . -B build/ -DBUILD_TEST=ON -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
             - name: Build Project
               run: cmake --build build/ --config ${{env.BUILD_TYPE}}
               
